@@ -1,0 +1,52 @@
+.awesome__main-header {
+    margin-bottom: 5rem;
+}
+
+.awesome__icon {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.awesome__icon-container {
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.awesome__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.awesome__card {
+    text-align: center;
+    color: var(--black);
+    max-width: 480px;
+}
+
+.awesome__card-title.main-subtitle {
+    margin-bottom: 1rem;
+}
+
+.awesome__card:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .awesome__card {
+        width: 30%;
+        min-width: 200px;
+    }
+
+    .awesome__card:not(:first-child) {
+        margin-right: -2rem;
+        padding: 0 2rem;
+    }
+} 

@@ -1,0 +1,27 @@
+.stylish {
+    background: url(../Img/city.png), rgba(0, 0, 0, 0.55);
+    background-blend-mode: overlay;
+}
+
+.stylish__inner {
+   flex-direction: column;
+   align-items: center;
+}
+
+.stylish.section-padding {
+    padding: 5rem 0 2rem;
+}
+
+.stylish__main-header {
+    margin-bottom: 3rem;
+}
+
+.stylish__title {
+    color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+    .stylish {
+        background-position-x: center;
+    }
+}

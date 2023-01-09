@@ -1,0 +1,42 @@
+.footer {
+    background-color: black;
+    height: 100px;
+}
+
+.footer__inner {
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.social-nets {
+    color: var(--lightGrey);
+}
+
+.social-nets__list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-net {
+    font-size: 23px;
+}
+
+.social-net:not(:last-child) {
+margin-right: .5em;
+}
+
+.footer__text {
+    color: var(--grey);
+    font: 12px 'Open Sans', sans-serif;
+}
+
+.footer__socoal-nets {
+    max-width: 295px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
