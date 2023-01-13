@@ -58,7 +58,6 @@ z-index: 2;
 }
 
 .header__nav-list{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,8 +73,17 @@ z-index: 2;
     font: 400 1rem 'Open Sans', sans-serif;
     text-transform: capitalize;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 0;
     border-bottom: 1px solid black;
+    transition: .4s cubic-bezier(0.23, 1, 0.32, 1);
+    height: 0;
+    overflow: hidden;
+}
+
+.menu-button[type="checkbox"]:checked ~ .header__nav-list > .header__nav-item {
+    height: unset;
+    padding: 1.5em 0;
+    overflow: initial;
 }
 
 .header__nav-link {
