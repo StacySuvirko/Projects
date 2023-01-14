@@ -55,6 +55,23 @@ z-index: 2;
     height: 4px;
     background-color: var(--lightGrey);
     display: inline-block;
+    transition-duration: .4s;
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container {
+    justify-content: center;
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(2) {
+    background-color: transparent;
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(1) {
+    transform: rotate(405deg) translate(6%, 100%);
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(3) {
+    transform: rotate(-405deg) translate(3%, -100%);
 }
 
 .header__nav-list{
