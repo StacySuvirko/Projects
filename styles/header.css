@@ -55,6 +55,47 @@ z-index: 2;
     height: 4px;
     background-color: var(--lightGrey);
     display: inline-block;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.11,.75,.81,.74);
+    animation-fill-mode: forwards;
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(1) {
+    animation-name: hamburgerAnimation1;
+}
+
+@keyframes hamburgerAnimation1 {
+    0% {transform: rotate(0deg) translate(0, 0);}
+    60% {transform: rotate(405deg) translate(0, 200%);}
+    80% {transform: rotate(405deg) translate(50%, 200%);}
+    85% {transform: rotate(405deg) translate(45%, 200%);}
+    90% {transform: rotate(405deg) translate(10%, 200%);}
+    95% {transform: rotate(405deg) translate(12%, 200%);}
+    100% {transform: rotate(405deg) translate(17%, 200%);}
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(3) {
+    animation-name: hamburgerAnimation3;
+}
+
+@keyframes hamburgerAnimation3 {
+    0% {transform: rotate(0deg) translate(0, 0);}
+    70% {transform: rotate(-405deg) translate(0, -200%);}
+    80% {transform: rotate(-405deg) translate(50%, -200%);}
+    85% {transform: rotate(-405deg) translate(45%, -200%);}
+    90% {transform: rotate(-405deg) translate(10%, -200%);}
+    95% {transform: rotate(-405deg) translate(12%, -200%);}
+    100% {transform: rotate(-405deg) translate(16%, -200%);}
+}
+
+.menu-button[type="checkbox"]:checked + .menu-button-container .menu-button__line:nth-child(2) {
+    animation-name: hamburgerAnimation2;
+}
+
+@keyframes hamburgerAnimation2 {
+    0% {background-color: var(--lightGrey);}
+    50% {background-color: transparent;}
+    100% {background-color: transparent;}
 }
 
 .header__nav-list{
